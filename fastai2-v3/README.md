@@ -26,4 +26,4 @@ Nvidia Drivers
 
 You can also just run the following without having to build the entire container yourself. This will pull the container from Docker Hub.
 
-`sudo docker run --runtime=nvidia -d -p 8888:8888 paperspace/fastai:1.0-CUDA9.2-base-3.0-v1.0.6`
+`sudo docker run --runtime=nvidia -d -p 8888:8888 paperspace/fastai:2.0-CUDA9.2-base-3.0-v0.0.11-jupyterlab`
