@@ -28,6 +28,8 @@ dependencies:
       - dataclasses
       - fastai2
       - fastprocess
+      - utils
+      - graphviz
       - ipywidgets>=7.5.1
       - nbdev
       - azure-cognitiveservices-search-imagesearch
