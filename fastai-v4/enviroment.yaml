@@ -29,3 +29,5 @@ dependencies:
       - fastai2
       - fastprocess
       - ipywidgets>=7.5.1
+      - nbdev
+      - azure-cognitiveservices-search-imagesearch
