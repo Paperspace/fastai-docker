@@ -1,0 +1,28 @@
+name: fastai
+channels:
+  - conda-forge
+  - pytorch
+  - fastai
+  - defaults
+dependencies:
+  - pytorch>=1.3.0
+  - torchvision>=1.4
+  - matplotlib
+  - cuda92
+  - fastprogress>=0.1.22
+  - fastai
+  - jupyter
+  - pandas
+  - requests
+  - pyyaml
+  - pillow
+  - python>=3.6
+  - pip
+  - scikit-learn
+  - scipy
+  - spacy
+  - pip:
+      - nvidia-ml-py3
+      - dataclasses
+      - fastai2
+      - fastprocess
