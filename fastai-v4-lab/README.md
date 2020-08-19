@@ -3,6 +3,8 @@
 
 ## Overview
 
+If you'd like to use jupyter lab instead please build this image.
+
 This is a docker build file designed to work with [Paperspace]. The latest pre-built runtimes are pushed here: https://hub.docker.com/r/paperspace/fastai/
 
 This container pulls the latest fast.ai class. You can find this repo here: https://github.com/fastai/fastai and you can learn more about the Fast.ai course here: http://course.fast.ai/
