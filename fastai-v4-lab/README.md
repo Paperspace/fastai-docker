@@ -1,9 +1,8 @@
 # Paperspace + Fast.ai Docker files
 
+*JupyterLab version*
 
 ## Overview
-
-If you'd like to use jupyter lab instead please build this image.
 
 This is a docker build file designed to work with [Paperspace]. The latest pre-built runtimes are pushed here: https://hub.docker.com/r/paperspace/fastai/
 
