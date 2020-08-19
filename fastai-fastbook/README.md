@@ -7,8 +7,6 @@ This is a docker build file designed to work with [Paperspace]. The latest pre-b
 
 This container pulls the latest fast.ai fastbook repo. You can find this repo here: https://github.com/fastai/fastbook and you can learn more about the Fast.ai book here: http://book.fast.ai/
 
-This dockerfile pins the fastai "fastbook" repository to the commit hash: 5cf040c55c7da95167595ffa815499d37eb266f2 representing the master branch as of August 18th 2020.
-
 Additionally, for posterity the spring fast.ai course v4 (on which the book is based) is also included inside course-v4 folder.
 
 ## Requirements:
