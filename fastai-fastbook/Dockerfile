@@ -19,9 +19,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libpng-dev &&\
      rm -rf /var/lib/apt/lists/*
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt-get install -y nodejs
-
 ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 ENV PYTHON_VERSION=3.6
 
@@ -43,13 +40,13 @@ CMD source activate fastai
 CMD source ~/.bashrc
 
 RUN chmod -R a+w /notebooks
-COPY debugger_install.sh /debugger_install.sh
-RUN /debugger_install.sh
-
 WORKDIR /notebooks
 
 # Clone course-v4
 RUN git clone https://github.com/fastai/course-v4.git
+
+# Clone fastbook
+RUN git clone https://github.com/fastai/fastbook.git
 
 COPY config.yml /root/.fastai/config.yml
 COPY run.sh /run.sh

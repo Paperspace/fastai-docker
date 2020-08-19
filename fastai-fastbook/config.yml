@@ -1,0 +1,6 @@
+archive_path: /storage/archive/
+data_path: /storage/data/
+model_path: /storage/models/
+storage_path: /storage/data/
+version: 2
+
