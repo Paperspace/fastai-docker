@@ -26,8 +26,9 @@ dependencies:
   - pip:
       - nvidia-ml-py3
       - dataclasses
-      - fastai2
+      - fastbook
       - fastprocess
+      - fastai2
       - utils
       - graphviz
       - ipywidgets>=7.5.1
