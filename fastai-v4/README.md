@@ -24,4 +24,4 @@ Nvidia Drivers
 
 You can also just run the following without having to build the entire container yourself. This will pull the container from Docker Hub.
 
-`sudo docker run --gpus all -d -p 8888:8888 paperspace/fastai:2.0-CUDA9.2-complete-4.0-v0.0.12`
+`sudo docker run --gpus all -d -p 8888:8888 paperspace/fastai:2.0-CUDA9.2-complete-4.0-v0.0.12 /run.sh`
