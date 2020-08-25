@@ -33,9 +33,9 @@ RUN curl -o ~/miniconda.sh -O  https://repo.anaconda.com/miniconda/Miniconda3-la
 
 ENV PATH=$PATH:/opt/conda/bin/
 ENV USER fastai
-# Create Enviroment
-COPY enviroment.yaml /enviroment.yaml
-RUN conda env create -f enviroment.yaml
+# Create Environment
+COPY environment.yaml /environment.yaml
+RUN conda env create -f environment.yaml
 
 WORKDIR /notebooks
 # Activate Source
