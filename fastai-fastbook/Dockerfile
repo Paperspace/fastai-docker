@@ -42,9 +42,6 @@ CMD source ~/.bashrc
 RUN chmod -R a+w /notebooks
 WORKDIR /notebooks
 
-# Clone course-v4
-RUN git clone https://github.com/fastai/course-v4.git
-
 # Clone fastbook
 RUN git clone https://github.com/fastai/fastbook.git
 

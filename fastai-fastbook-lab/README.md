@@ -8,7 +8,7 @@ This is a docker build file designed to work with [Paperspace]. The latest pre-b
 
 This container pulls the latest fast.ai fastbook repo. You can find this repo here: https://github.com/fastai/fastbook and you can learn more about the Fast.ai book here: http://book.fast.ai/
 
-Additionally, for posterity the spring fast.ai course v4 (on which the book is based) is also included inside course-v4 folder.
+course-v4 is no longer a repo -- please use the clean directory of the fastbook repository (fastbook/clean) for that content
 
 ## Requirements:
 

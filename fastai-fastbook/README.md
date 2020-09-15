@@ -7,7 +7,7 @@ This is a docker build file designed to work with [Paperspace]. The latest pre-b
 
 This container pulls the latest fast.ai fastbook repo. You can find this repo here: https://github.com/fastai/fastbook and you can learn more about the Fast.ai book here: http://book.fast.ai/
 
-Additionally, for posterity the spring fast.ai course v4 (on which the book is based) is also included inside course-v4 folder.
+course-v4 is no longer a repo -- please use the clean directory of the fastbook repository (fastbook/clean) for that content
 
 ## Requirements:
 
@@ -26,4 +26,4 @@ Nvidia Drivers
 
 You can also just run the following without having to build the entire container yourself. This will pull the container from Docker Hub.
 
-`sudo docker run --gpus all -d -p 8888:8888 paperspace/fastai:2.0-CUDA9.2-fastbook-v0.0.8 /run.sh`
+`sudo docker run --gpus all -d -p 8888:8888 paperspace/fastai:2.0-CUDA9.2-fastbook-v0.0.11 /run.sh`
