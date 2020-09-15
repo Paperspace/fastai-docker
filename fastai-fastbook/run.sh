@@ -1,5 +1,6 @@
 #!/bin/bash
 source activate fastai
+export SHELL=/bin/bash
 mkdir /storage/data
 rm -rf /storage/lost+found
 ln -s /datasets/fastai/* /storage/data/

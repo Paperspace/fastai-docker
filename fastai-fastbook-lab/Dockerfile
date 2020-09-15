@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libjpeg-dev \
          zip \
          unzip \
+         openssh-client \
          libpng-dev &&\
      rm -rf /var/lib/apt/lists/*
 
