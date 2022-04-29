@@ -14,10 +14,11 @@ FROM fastdotai/fastai@sha256:4524c0f2a769a6f446986e61cfbd0d8421f9f8cee28a7a94304
 # we need to pin to a still-supported Jinja2 version
 RUN python3 -m pip install -I jinja2>=3.1.1
 RUN python3 -m pip install --upgrade nbdev nbconvert jupyter jupyterlab
-RUN python3 -m pip install --upgrade fastai
+RUN python3 -m pip install --upgrade fastai>=2.6.0
 RUN python3 -m pip install --upgrade gradient
 RUN python3 -m pip install --upgrade ipywidgets
-
+RUN python3 -m pip install --upgrade transformers[torch]
+RUN python3 -m pip install --upgrade fastbook
 
 ENV USER fastai
 WORKDIR /notebooks
