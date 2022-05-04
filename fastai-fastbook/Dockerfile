@@ -19,6 +19,7 @@ RUN python3 -m pip install --upgrade gradient
 RUN python3 -m pip install --upgrade ipywidgets
 RUN python3 -m pip install --upgrade transformers[torch]
 RUN python3 -m pip install --upgrade fastbook
+RUN apt install vim joe emacs man -y
 
 ENV USER fastai
 WORKDIR /notebooks
