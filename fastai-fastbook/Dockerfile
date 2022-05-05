@@ -21,7 +21,7 @@ RUN python3 -m pip install --upgrade transformers[torch]
 RUN python3 -m pip install --upgrade fastbook
 RUN apt-get -y update
 RUN apt install vim joe emacs man -y
-RUN echo 'if [ -f /storage/.bash.local ]; then ./storage/.bash.local fi' >> ~/.bashrc 
+RUN echo 'if [ -f /storage/.bash.local ]; then\n ./storage/.bash.local \nfi' >> ~/.bashrc 
 
 ENV USER fastai
 WORKDIR /notebooks
