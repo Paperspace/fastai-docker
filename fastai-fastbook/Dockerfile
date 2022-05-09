@@ -27,7 +27,7 @@ RUN apt install python3.9 -y
 RUN apt install vim joe emacs man sudo curl wget -y
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
 RUN apt install nodejs -y
-RUN python3 -m pip install jupyter_contrib_nbextensions
+RUN python3 -m pip install --upgrade jupyter_contrib_nbextensions jupyterlab-git
 RUN jupyter contrib nbextension install --sys-prefix
 RUN echo '\nalias python=python3.9\nalias python3=python3.9\n' >> ~/.bashrc 
 RUN echo 'if [ -f /storage/.bash.local ]; then\n . /storage/.bash.local \nfi' >> ~/.bashrc 
