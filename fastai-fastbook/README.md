@@ -3,9 +3,10 @@
 
 ## Overview
 
-This is a docker build file designed to work with [Paperspace]. The latest pre-built runtimes are pushed here: https://hub.docker.com/r/paperspace/fastai/
+This is a Dockerfile (a text file that allow you to build Docker images) designed to work with [Paperspace]. The latest Docker images (pre-built runtimes) are pushed here: https://hub.docker.com/r/paperspace/fastai/
 
-This container is intended to be used with to be used with the latest (v4) fast.ai fastbook repo. You can find this repo here: https://github.com/fastai/fastbook and you can learn more about the Fast.ai book here: http://book.fast.ai/
+This Dockerfile is intended to be used with the fast.ai fastbook repo at https://github.com/fastai/fastbook 
+You can learn more about the fast.ai book here: http://book.fast.ai/
 
 course-v4 is no longer a repo -- please use the clean directory of the fastbook repository (fastbook/clean) for that content
 
@@ -22,8 +23,9 @@ Nvidia Drivers
 
 `sudo docker build -t paperspace/fastai .`
 
-## Pre-built runtimes
+## Docker images (pre-built runtimes)
 
-You can also just run the following without having to build the entire container yourself. This will pull the container from Docker Hub.
+You can also just run the following command without having to build the Docker image yourself. 
+This will pull the Docker image from Docker Hub:
 
 `sudo docker run --gpus all -d -p 8888:8888 paperspace/fastai:2.0-fastbook-2021-11-12 /run.sh`
